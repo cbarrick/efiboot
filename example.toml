@@ -1,0 +1,28 @@
+[[BootEntry]]
+label = 'Arch Linux'
+loader = '/vmlinuz-linux'
+params = [
+    'initrd=/amd-ucode.img',
+    'initrd=/initramfs-linux.img',
+    'root=/dev/disk/by-label/arch-linux',
+    'rw',
+    'nvidia-drm.modeset=1',
+    'acpi_enforce_resources=lax',
+]
+
+[[BootEntry]]
+label = 'Arch Linux (fallback)'
+loader = '/vmlinuz-linux'
+params = [
+    'initrd=/initramfs-linux-fallback.img',
+    'root=/dev/disk/by-label/arch-linux',
+    'rw',
+]
+
+[[BootEntry]]
+label = 'UEFI Shell'
+loader = '/shell.efi'
+
+[[BootEntry]]
+label = "PCMemTest"
+loader = "/memtest.efi"

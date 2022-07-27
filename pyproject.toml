@@ -1,0 +1,70 @@
+# Project Metadata
+# ---------------------------------------------------------------------------
+
+[project]
+name = "efiboot"
+version = "1.0.0b1"
+description = "An EFI boot entry manager"
+authors = [{name = "Chris Barrick",  email = "cbarrick1@gmail.com"}]
+license = {file = "LICENSE"} # Apache-2.0
+readme = "README.md"
+urls = {homepage = "https://github.com/cbarrick/efiboot"}
+
+keywords = [
+    "boot", "bootloader", "efi", "efibootmgr", "efistub", "uefi", "uefi-boot"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux", # Linux only (for now)
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: System :: Boot",
+    "Topic :: System :: Systems Administration",
+    "Topic :: System :: Installation/Setup",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+requires-python = ">=3.8.0"
+
+dependencies = [
+    "docopt >=0.6.2",
+    "importlib-metadata >=4.10.1",
+    "tomli >=2.0.0, <3.0.0",
+]
+
+[project.optional-dependencies]
+docs = [
+    "sphinx >=4.4.0, <5.0.0",
+    "sphinx-design >=0.0.13",
+    "furo >=2022.1.2",
+]
+dev = [
+    "sphinx-autobuild >=2021.3.14",
+    "ipython >=8.0.0",
+    "black >=22.0.0",
+]
+
+[project.scripts]
+efiboot = 'efiboot.cli.__main__:start'
+
+[project.entry-points.efiboot_backends]
+default = 'efiboot.backends.default:DEFAULT_BACKEND'
+efibootmgr = 'efiboot.backends.efibootmgr:EFIBOOTMGR_BACKEND'
+
+[project.entry-points.efiboot_cli]
+bootnext = 'efiboot.cli:bootnext'
+status = 'efiboot.cli:status'
+push = 'efiboot.cli:push'
+timeout = 'efiboot.cli:timeout'
+
+
+# Build System
+# ---------------------------------------------------------------------------
+
+[build-system]
+requires = ["flit_core >=3.2, <4"]
+build-backend = "flit_core.buildapi"

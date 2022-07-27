@@ -1,0 +1,6 @@
+__pycache__
+.ropeproject
+.venv
+.vscode
+dist/
+docs/api/

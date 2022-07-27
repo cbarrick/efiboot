@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 750" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<vectornator:setting key="IsTimeLapseWatermarkDisabled" value="false"/>
+<vectornator:setting key="UndoHistoryDisabled" value="true"/>
+<vectornator:setting key="VNDimensionsVisible" value="true"/>
+<vectornator:setting key="VNSnapToGuides" value="true"/>
+<vectornator:setting key="WDCMYKEnabledKey" value="false"/>
+<vectornator:setting key="WDDisplayWhiteBackground" value="false"/>
+<vectornator:setting key="WDDynamicGuides" value="true"/>
+<vectornator:setting key="WDGuidesVisible" value="true"/>
+<vectornator:setting key="WDIsolateActiveLayer" value="false"/>
+<vectornator:setting key="WDOutlineMode" value="false"/>
+<vectornator:setting key="WDRulersVisible" value="true"/>
+<vectornator:setting key="WDSnapToEdges" value="false"/>
+<vectornator:setting key="WDSnapToGrid" value="false"/>
+<vectornator:setting key="WDSnapToPoints" value="false"/>
+<vectornator:setting key="WDUnits" value="Pixels"/>
+</metadata>
+<defs/>
+<g id="Backgrounds" vectornator:layerName="Backgrounds" visibility="hidden">
+<g opacity="1">
+<path d="M0 0L1000 0L1000 750L0 750L0 0Z" fill="#131416"/>
+<g>
+<path d="M0 5.1631C0 36.4877 0 750 0 750L1000 750L1000 0L0 0" fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M13.5479 16.5633L1.54791 1.89663L-2.2548e-07 0.00473168L-1.54791 1.89663L-13.5479 16.5633C-14.2474 17.4182-14.1214 18.6782-13.2665 19.3777C-12.4116 20.0771-11.1515 19.9511-10.4521 19.0962L1.54791 4.42958L-1.54791 4.42958L10.4521 19.0962C11.1515 19.9511 12.4116 20.0771 13.2665 19.3777C14.1214 18.6782 14.2474 17.4182 13.5479 16.5633Z" fill="#d0d0d0"/>
+</g>
+</g>
+<path d="M0 0L1000 0L1000 750L0 750L0 0Z" fill="#ffffff" opacity="0"/>
+</g>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<path d="M566 450L934 450C942.837 450 950 457.163 950 466L950 534C950 542.837 942.837 550 934 550L566 550C557.163 550 550 542.837 550 534L550 466C550 457.163 557.163 450 566 450Z" fill="#faa781" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="48" opacity="1" text-anchor="middle" transform="matrix(1 0 0 1 644.461 470.5)" vectornator:text="Controller&#xA;" vectornator:width="211.078" x="0" y="0">
+<tspan textLength="208.078" x="105.539" y="47">
+Controller
+</tspan>
+</text>
+<path d="M66 450L434 450C442.837 450 450 457.163 450 466L450 534C450 542.837 442.837 550 434 550L66 550C57.1634 550 50 542.837 50 534L50 466C50 457.163 57.1634 450 66 450Z" fill="#81d4fa" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="48" opacity="1" text-anchor="middle" transform="matrix(1 0 0 1 105.742 470.5)" vectornator:text="Configuration&#xA;" vectornator:width="288.516" x="0" y="0">
+<tspan textLength="285.516" x="144.258" y="47">
+Configuration
+</tspan>
+</text>
+<path d="M66 250L934 250C942.837 250 950 257.163 950 266L950 334C950 342.837 942.837 350 934 350L66 350C57.1634 350 50 342.837 50 334L50 266C50 257.163 57.1634 250 66 250Z" fill="#81d4fa" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="48" opacity="1" text-anchor="middle" transform="matrix(1 0 0 1 337.063 270.5)" vectornator:text="Python&#x20;Facade&#xA;" vectornator:width="325.875" x="0" y="0">
+<tspan textLength="322.875" x="162.938" y="47">
+Python Facade
+</tspan>
+</text>
+<path d="M66 50L934 50C942.837 50 950 57.1634 950 66L950 134C950 142.837 942.837 150 934 150L66 150C57.1634 150 50 142.837 50 134L50 66C50 57.1634 57.1634 50 66 50Z" fill="#81d4fa" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="48" opacity="1" text-anchor="middle" transform="matrix(1 0 0 1 235.695 70.5)" vectornator:text="Command&#x20;Line&#x20;Interface" vectornator:width="528.609" x="0" y="0">
+<tspan textLength="525.609" x="264.305" y="47">
+Command Line Interface</tspan>
+</text>
+<g opacity="1">
+<g opacity="0.8">
+<path d="M500 244.841C500 236.245 500 150 500 150" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M486.452 233.441L498.452 248.107L500 249.999L501.548 248.107L513.548 233.441C514.247 232.586 514.121 231.326 513.266 230.626C512.411 229.927 511.151 230.053 510.452 230.908L498.452 245.574L501.548 245.574L489.548 230.908C488.848 230.053 487.588 229.927 486.733 230.626C485.879 231.326 485.753 232.586 486.452 233.441Z" fill="#000000"/>
+</g>
+</g>
+<g opacity="1">
+<g opacity="0.8">
+<path d="M250 444.841C250 436.245 250 350 250 350" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M236.452 433.441L248.452 448.107L250 449.999L251.548 448.107L263.548 433.441C264.247 432.586 264.121 431.326 263.266 430.626C262.412 429.927 261.151 430.053 260.452 430.908L248.452 445.574L251.548 445.574L239.548 430.908C238.848 430.053 237.588 429.927 236.733 430.626C235.879 431.326 235.753 432.586 236.452 433.441Z" fill="#000000"/>
+</g>
+</g>
+<g opacity="1">
+<g opacity="0.8">
+<path d="M750 444.841C750 436.245 750 350 750 350" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M736.452 433.441L748.452 448.107L750 449.999L751.548 448.107L763.548 433.441C764.247 432.586 764.121 431.326 763.266 430.626C762.411 429.927 761.151 430.053 760.452 430.908L748.452 445.574L751.548 445.574L739.548 430.908C738.848 430.053 737.588 429.927 736.733 430.626C735.878 431.326 735.752 432.586 736.452 433.441Z" fill="#000000"/>
+</g>
+</g>
+<g opacity="1">
+<g opacity="0.8">
+<path d="M455.159 500.053C463.755 500.048 550 500 550 500" fill="none" stroke="#000000" stroke-dasharray="8.0,8.0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M466.552 486.498L451.892 498.507L450.001 500.056L451.893 501.602L466.567 513.594C467.422 514.293 468.682 514.166 469.381 513.311C470.08 512.456 469.953 511.196 469.098 510.497L454.425 498.505L454.426 501.601L469.086 489.593C469.941 488.893 470.066 487.633 469.366 486.778C468.666 485.924 467.406 485.798 466.552 486.498Z" fill="#000000"/>
+</g>
+</g>
+<path d="M66 600L934 600C942.837 600 950 608.954 950 620L950 680C950 691.046 942.837 700 934 700L66 700C57.1634 700 50 691.046 50 680L50 620C50 608.954 57.1634 600 66 600Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<path d="M184.09 630L216.09 630C218.299 630 220.09 631.791 220.09 634L220.09 666C220.09 668.209 218.299 670 216.09 670L184.09 670C181.88 670 180.09 668.209 180.09 666L180.09 634C180.09 631.791 181.88 630 184.09 630Z" fill="#81d4fa" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="24" opacity="1" text-anchor="start" transform="matrix(1 0 0 1 240.09 635)" vectornator:text="Concrete&#xA;" vectornator:width="110" x="0" y="0">
+<tspan textLength="97.3828" x="0" y="23">
+Concrete
+</tspan>
+</text>
+<path d="M384.09 630L416.09 630C418.299 630 420.09 631.791 420.09 634L420.09 666C420.09 668.209 418.299 670 416.09 670L384.09 670C381.88 670 380.09 668.209 380.09 666L380.09 634C380.09 631.791 381.88 630 384.09 630Z" fill="#faa781" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="24" opacity="1" text-anchor="start" transform="matrix(1 0 0 1 440.09 635)" vectornator:text="Abstract&#xA;" vectornator:width="110" x="0" y="0">
+<tspan textLength="88.0312" x="0" y="23">
+Abstract
+</tspan>
+</text>
+<path d="M582.09 630L678.09 630C684.717 630 690.09 631.791 690.09 634L690.09 666C690.09 668.209 684.717 670 678.09 670L582.09 670C575.462 670 570.09 668.209 570.09 666L570.09 634C570.09 631.791 575.462 630 582.09 630Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8" stroke-width="4"/>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="24" opacity="1" text-anchor="start" transform="matrix(1 0 0 1 580.09 635)" vectornator:text="As&#xA;" vectornator:width="20" x="0" y="0">
+<tspan textLength="16.0078" x="0" y="23">
+A</tspan>
+</text>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="24" opacity="1" text-anchor="start" transform="matrix(1 0 0 1 660.09 635)" vectornator:text="B&#xA;" vectornator:width="20" x="0" y="0">
+<tspan textLength="16.0078" x="0" y="23">
+B
+</tspan>
+</text>
+<g opacity="1">
+<g opacity="0.8">
+<path d="M644.93 650.174C641.096 650.155 610.09 650 610.09 650" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M633.462 663.665L648.189 651.738L650.088 650.2L648.204 648.643L633.598 636.57C632.746 635.866 631.486 635.986 630.782 636.837C630.078 637.688 630.198 638.949 631.049 639.653L645.656 651.726L645.671 648.63L630.945 660.557C630.086 661.252 629.954 662.511 630.649 663.37C631.345 664.228 632.604 664.36 633.462 663.665Z" fill="#000000"/>
+</g>
+</g>
+<text fill="#000000" fill-opacity="0.87" font-family="Helvetica" font-size="24" opacity="1" text-anchor="start" transform="matrix(1 0 0 1 709.91 635)" vectornator:text="A&#x20;uses&#x20;B&#xA;" vectornator:width="110" x="0" y="0">
+<tspan textLength="96.0469" x="0" y="23">
+A uses B
+</tspan>
+</text>
+</g>
+</svg>

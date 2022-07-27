@@ -1,0 +1,17 @@
+/* Fix autosummary table width when the names are too short. */
+article table.align-default {
+    width: 100%;
+}
+
+/* Add additional top margin to rubrics.
+ *
+ * Note that the Napoleon extension often outputs `dl.field-list > dt` which we
+ * want to style like a rubric.
+ */
+p.rubric {
+    margin-top: 2em;
+}
+dl.field-list > dt {
+    margin-top: 2em;
+    font-weight: 700;
+}

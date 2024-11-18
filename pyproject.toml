@@ -5,13 +5,19 @@
 name = "efiboot"
 version = "1.0.0b1"
 description = "An EFI boot entry manager"
-authors = [{name = "Chris Barrick",  email = "cbarrick1@gmail.com"}]
-license = {file = "LICENSE"} # Apache-2.0
+authors = [{ name = "Chris Barrick", email = "cbarrick1@gmail.com" }]
+license = { file = "LICENSE" } # Apache-2.0
 readme = "README.md"
-urls = {homepage = "https://github.com/cbarrick/efiboot"}
+urls = { homepage = "https://github.com/cbarrick/efiboot" }
 
 keywords = [
-    "boot", "bootloader", "efi", "efibootmgr", "efistub", "uefi", "uefi-boot"
+    "boot",
+    "bootloader",
+    "efi",
+    "efibootmgr",
+    "efistub",
+    "uefi",
+    "uefi-boot",
 ]
 
 classifiers = [
@@ -36,13 +42,13 @@ dependencies = [
     "tomli >=2.0.0, <3.0.0",
 ]
 
-[project.optional-dependencies]
-docs = [
+optional-dependencies.docs = [
     "sphinx >=4.4.0, <5.0.0",
     "sphinx-design >=0.0.13",
     "furo >=2022.1.2",
 ]
-dev = [
+
+optional-dependencies.dev = [
     "sphinx-autobuild >=2021.3.14",
     "ipython >=8.0.0",
     "black >=22.0.0",

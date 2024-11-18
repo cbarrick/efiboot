@@ -16,6 +16,9 @@
 # Configuration
 # ---------------------------------------------------------------------------
 
+# Read the package name from pyproject.toml.
+packagename := $(shell sed -En 's/^name = "(.*)"/\1/p' pyproject.toml)
+
 # Disable all implicit rules.
 .SUFFIXES:
 
@@ -50,7 +53,7 @@ sources := $(shell find $(pysrcdir) -type f -not -path *__pycache__*)
 docsources := $(shell find $(docsrcdir) -type f)
 
 # The version as specified in pyproject.toml is used in some file names.
-version := $(shell sed -En 's/version = "(.*)"/\1/p' pyproject.toml)
+version := $(shell sed -En 's/^version = "(.*)"/\1/p' pyproject.toml)
 
 
 # Help Targets
@@ -60,7 +63,7 @@ version := $(shell sed -En 's/version = "(.*)"/\1/p' pyproject.toml)
 .PHONY: help debug
 
 help:
-	@echo "The efiboot build system.                                       "
+	@echo "The $(packagename) build system.                                "
 	@echo "                                                                "
 	@echo "USAGE                                                           "
 	@echo "    make [<options>...] [<target>...]                           "
@@ -76,7 +79,7 @@ help:
 	@echo "    docs     Build the HTML documentation.                      "
 	@echo "                                                                "
 	@echo "INSTALL TARGETS                                                 "
-	@echo "    install            Install efiboot.                         "
+	@echo "    install            Install $(packagename).                  "
 	@echo "    install-license    Install the license file.                "
 	@echo "    install-docs       Install the HTML documentation.          "
 	@echo "    install-all        Install everything.                      "
@@ -100,6 +103,7 @@ help:
 	@echo "    sphinx-autobuild    Start a Sphinx development server.      "
 
 debug:
+	@echo "packagename : $(packagename)                                    "
 	@echo "SHELL       : $(SHELL)                                          "
 	@echo "PYTHON3     : $(PYTHON3)                                        "
 	@echo "PIP         : $(PIP)                                            "
@@ -127,19 +131,19 @@ debug:
 all: sdist wheel docs
 
 # The core artifacts.
-sdist: dist/efiboot-$(version).tar.gz
-wheel: dist/efiboot-$(version)-py3-none-any.whl
+sdist: dist/$(packagename)-$(version).tar.gz
+wheel: dist/$(packagename)-$(version)-py3-none-any.whl
 docs: dist/docs/index.html
 
 # Concrete Targets
 # -------------------------
 
 # Build the wheel.
-dist/efiboot-$(version)-py3-none-any.whl: $(sources) pyproject.toml
+dist/$(packagename)-$(version)-py3-none-any.whl: $(sources) pyproject.toml
 	$(PYTHON3) -m build --wheel
 
 # Build the sdist.
-dist/efiboot-$(version).tar.gz: $(sources) pyproject.toml
+dist/$(packagename)-$(version).tar.gz: $(sources) pyproject.toml
 	$(PYTHON3) -m build --sdist
 
 # Build the docs.
@@ -151,7 +155,7 @@ dist/docs/%: $(docsources) $(sources) pyproject.toml
 	$(PYTHON3) -m venv .venv
 	.venv/bin/python3 -m pip install --upgrade pip
 	.venv/bin/python3 -m pip install build flit
-	.venv/bin/flit install -s
+	.venv/bin/flit install -s --deps=all
 
 
 # Install Targets
@@ -196,18 +200,18 @@ install: wheel
 		--no-compile \
 		--find-links="./dist" \
 		$(PIPFLAGS) \
-		efiboot
+		$(packagename)
 
 # Install the license file.
 install-license: LICENSE
-	@mkdir -p "$(DESTDIR)$(licensedir)/efiboot"
-	install -m644 "LICENSE" "$(DESTDIR)$(licensedir)/efiboot/LICENSE"
+	@mkdir -p "$(DESTDIR)$(licensedir)/$(packagename)"
+	install -m644 "LICENSE" "$(DESTDIR)$(licensedir)/$(packagename)/LICENSE"
 
 # Install the compiled docs.
 install-docs: docs
-	@mkdir -p "$(DESTDIR)$(htmldir)/efiboot"
-	cp -r dist/docs/* "$(DESTDIR)$(htmldir)/efiboot"
-	find "$(DESTDIR)$(htmldir)/efiboot" -type f | xargs -tn1 chmod 644
+	@mkdir -p "$(DESTDIR)$(htmldir)/$(packagename)"
+	cp -r dist/docs/* "$(DESTDIR)$(htmldir)/$(packagename)"
+	find "$(DESTDIR)$(htmldir)/$(packagename)" -type f | xargs -tn1 chmod 644
 
 
 # Check Targets
